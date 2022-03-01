@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    t = prompt("Nhập vào nhiệt độ:");
+    let tiepTuc = true;
+    while (tiepTuc == true) {
+        if (t > 100) {
+            t = prompt("Giảm nhiệt độ");
+        } else if (t < 20) {
+            t = prompt("Tăng nhiệt độ");
+        } else {
+            tiepTuc = false;
+            break;
+        }
+    }
+
+</script>
+
+</body>
+</html>

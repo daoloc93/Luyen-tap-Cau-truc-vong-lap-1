@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = 0;
+    let b = 1;
+    let sum = 0;
+    result = "";
+
+    for (let i=0; i<20; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+        sum+=c;
+        result += " + " + c;
+    }
+    document.write("Tổng = 0 " + result + " " + " = " + sum);
+
+</script>
+</body>
+</html>

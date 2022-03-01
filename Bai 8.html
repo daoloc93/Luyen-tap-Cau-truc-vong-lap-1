@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick = "choi()">Chơi</button>
+
+<script>
+
+function choi() {
+    let number = Math.round(Math.random() * 100);
+    let guess = prompt("Đoán 1 số từ 1 đến 100 (Đáp án là " + number + ")");
+    let tiepTuc = true;
+
+    while (tiepTuc) {
+        if (guess > number) {
+            guess = prompt("Cao quá, thử lại:")
+        } else if (guess < number) {
+            guess = prompt("Thấp quá, thử lại:")
+        } else {
+            alert("Chúc mừng, bạn đã đoán đúng!")
+            tiepTuc = false;
+        }
+    }
+}
+
+</script>
+</body>
+</html>
